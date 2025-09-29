@@ -17,7 +17,7 @@
     <a class="sr-only" href="#contact-us">Skip to contact us</a>
 
     <header>
-        <h2>Destination Majorca</h2>
+        <h1>Destination Majorca</h1>
         <p>
             Let Wonderlust Travel help you plan the trip of your dreams!
             Specializing in unforgettable experiences, we offer curated trips to the breathtaking island of Majorca, a
@@ -27,7 +27,7 @@
         </p>
     </header>
     <nav>
-        Main Navigation // Skip Link Location
+        <h2>Main Navigation</h2>
         <input type="checkbox" id="dropdown">
         <label for="dropdown"><span></span></label>
         <ul>
@@ -255,70 +255,70 @@
     </main>
     <footer>
         <section id="contact-us">
-            Contact Us <span id="required">(*required)</span>
-
-            <div>
-                <label>First Name<span>*</span></label>
-                <input>
-            </div>
-            <div>
-                <label>Last Name<span>*</span></label>
-                <input>
-            </div>
-            <div>
-                <label>Email<span>*</span></label>
-                <input>
-            </div>
-            <div>
-                <label>Phone<span>*</span></label>
-                <input>
-            </div>
-            <fieldset id="preferred-contact">
-                <legend>Preferred Contact Method<span>*</span></legend>
+            <h3>Contact Us <span id="required">(*required)</span></h3>
+            <form action="/submit" method="post">
                 <div>
-                    <input>
-                    <label>Email</label>
+                    <label for=" first-name">First Name<span>*</span></label>
+                    <input type="text" id="first-name" name="first-name" required aria-required="true">
                 </div>
                 <div>
-                    <input>
-                    <label>Text</label>
+                    <label for="last-name">Last Name<span>*</span></label>
+                    <input type="text" id="last-name" name="last-name" required aria-required="true">
                 </div>
                 <div>
-                    <input>
-                    <label>Phone</label>
+                    <label for="email">Email<span>*</span></label>
+                    <input type="email" id="email" name="email" required aria-required="true">
                 </div>
-            </fieldset>
-            <fieldset id="destination">
-                <legend>Destination<span>*</span></legend>
-                <select id="select-destination">
-                    <option>Choose</option>
-                    <option>Barcelona</option>
-                    <option>Granada</option>
-                    <option>Ibiza</option>
-                    <option>Madrid</option>
-                    <option>Majorca</option>
-                    <option>Seville</option>
-                    <option>Tenerife</option>
-                    <option>Valencia</option>
-                    <option>Other</option>
-                </select>
-            </fieldset>
-            <fieldset id="travelTime">
-                <legend>Travel Time<span>*</span></legend>
-                <select id="select-travel-time">
-                    <option>Choose</option>
-                    <option>Fall</option>
-                    <option>Winter</option>
-                    <option>Spring</option>
-                    <option>Summer</option>
-                    <option>Flexible</option>
-                </select>
-            </fieldset>
-            <input>
-
+                <div>
+                    <label for="phone">Phone<span>*</span></label>
+                    <input type="tel" id="phone" name="phone" required aria-required="true">
+                </div>
+                <fieldset id="preferred-contact">
+                    <legend>Preferred Contact Method<span>*</span></legend>
+                    <div class="form-control">
+                        <input type="radio" id="contact-email" name="contact-method" value="email" required>
+                        <label for="contact-email">Email</label>
+                    </div>
+                    <div class="form-control">
+                        <input type="radio" id="contact-text" name="contact-method" value="text" required>
+                        <label for="contact-text">Text</label>
+                    </div>
+                    <div class="form-control">
+                        <input type="radio" id="contact-phone" name="contact-method" value="phone" required>
+                        <label for="contact-phone">Phone</label>
+                    </div>
+                </fieldset>
+                <fieldset id="destination">
+                    <legend>Destination<span>*</span></legend>
+                    <select id="select-destination" required>
+                        <option>Choose</option>
+                        <option>Barcelona</option>
+                        <option>Granada</option>
+                        <option>Ibiza</option>
+                        <option>Madrid</option>
+                        <option>Majorca</option>
+                        <option>Seville</option>
+                        <option>Tenerife</option>
+                        <option>Valencia</option>
+                        <option>Other</option>
+                    </select>
+                </fieldset>
+                <fieldset id="travelTime">
+                    <legend>Travel Time<span>*</span></legend>
+                    <select id="select-travel-time" required>
+                        <option>Choose</option>
+                        <option>Fall</option>
+                        <option>Winter</option>
+                        <option>Spring</option>
+                        <option>Summer</option>
+                        <option>Flexible</option>
+                    </select>
+                </fieldset>
+                <button type="submit" id="submit">Submit</button>
+            </form>
         </section>
         <section id="legal">
-            Legal
+            <h2>Legal</h2>
             <small>Copyright 2021 Wonderlust</small>
             <a href="#">Privacy Statement</a>
             <a href="#">Terms of Service</a>

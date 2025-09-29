@@ -256,9 +256,9 @@
     <footer>
         <section id="contact-us">
             <h3>Contact Us <span id="required">(*required)</span></h3>
-            <form action="/submit" method="post">
+            <form action="https://wp.zybooks.com/form-viewer.php" method="POST">
                 <div>
-                    <label for=" first-name">First Name<span>*</span></label>
+                    <label for="first-name">First Name<span>*</span></label>
                     <input type="text" id="first-name" name="first-name" required aria-required="true">
                 </div>
                 <div>
@@ -290,7 +290,7 @@
                 </fieldset>
                 <fieldset id="destination">
                     <legend>Destination<span>*</span></legend>
-                    <select id="select-destination" required>
+                    <select id="select-destination" name="destination" required>
                         <option>Choose</option>
                         <option>Barcelona</option>
                         <option>Granada</option>
@@ -305,7 +305,7 @@
                 </fieldset>
                 <fieldset id="travelTime">
                     <legend>Travel Time<span>*</span></legend>
-                    <select id="select-travel-time" required>
+                    <select id="select-travel-time" name="travel-time" required>
                         <option>Choose</option>
                         <option>Fall</option>
                         <option>Winter</option>
@@ -319,7 +319,7 @@
         </section>
         <section id="legal">
             <h2>Legal</h2>
-            <small>Copyright 2021 Wonderlust</small>
+            <small>Copyright &copy; 2021 Wonderlust</small>
             <a href="#">Privacy Statement</a>
             <a href="#">Terms of Service</a>
         </section>
